@@ -88,7 +88,7 @@ The Agri-Intelligence Research Lab (AIRL) is a research organization dedicated t
 1. Push your changes to the `main` branch
 2. Go to repository Settings → Pages
 3. Select `main` branch as the source
-4. Your site will be live at `https://yourusername.github.io/airl-website`
+4. Your site will be live at `https://airlabnep.github.io/airlab`
 
 ## Features
 
