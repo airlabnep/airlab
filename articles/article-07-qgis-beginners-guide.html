@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QGIS Beginners Guide - Agri-Intelligence Research Lab</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><span class="logo-icon">💡</span>
+                <div class="logo-text-wrapper">
+                    <span class="logo-text">AIR Lab</span>
+                    <span class="logo-tagline">Intelligence in Agriculture</span>
+                </div></div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li><li><a href="../about.html" class="nav-link">About</a></li><li><a href="../publications.html" class="nav-link">Publications</a></li><li><a href="../people.html" class="nav-link">People</a></li><li><a href="../opportunities.html" class="nav-link">Opportunities</a></li><li><a href="../contact.html" class="nav-link">Contact</a></li><li class="dropdown"><a href="#" class="nav-link">More</a><div class="dropdown-content"><a href="../projects.html">Projects</a><a href="../collaborations.html">Collaborations</a><a href="../courses.html">Upcoming Courses</a><a href="../articles.html" class="active">Articles</a></div></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="article-full">
+        <div class="article-header">
+            <div class="container">
+                <div class="article-category">Technology Guide</div>
+                <h1>Getting Started with QGIS: A Beginner's Guide</h1>
+                <div class="article-meta-full"><span class="author">By GIS Training Team</span><span class="date">April 1, 2024</span><span class="read-time">5 min read</span></div>
+            </div>
+        </div>
+
+        <div class="article-body">
+            <div class="container">
+                <h2>What is QGIS?</h2>
+                <p>
+                    QGIS (Quantum GIS) is a free, open-source Geographic Information System software that allows users to create, view, analyze, and interpret geospatial data. Unlike proprietary GIS software like ArcGIS that requires expensive licenses, QGIS is freely available for Windows, Mac, and Linux, making it ideal for students, farmers, researchers, and organizations with limited budgets.
+                </p>
+
+                <h2>Installation</h2>
+                <p>
+                    Download QGIS from qgis.org. The latest stable version (currently 3.28) is recommended for beginners. Installation is straightforward - download the installer appropriate for your operating system and follow the installation wizard. Installation also includes sample data useful for learning.
+                </p>
+
+                <h2>The QGIS Interface</h2>
+                <p>
+                    The main QGIS window contains: a menu bar and toolbar at top, layers panel on left (showing loaded data layers), main map canvas in center, and various panels on right for attributes and properties. The toolbar contains buttons for common operations like zoom, pan, and selection. Take time to explore the interface and identify key elements.
+                </p>
+
+                <h2>Loading Data</h2>
+                <p>
+                    QGIS works with vector data (points, lines, polygons) and raster data (images, satellite data). To load data: Go to Layer menu → Add Layer → Vector/Raster Layer, then browse to your data file. Common formats include shapefiles (.shp), GeoTIFF images (.tif), and CSV files with geographic coordinates. For beginners, start with vector data like district or field boundary shapefiles.
+                </p>
+
+                <h2>Basic Operations</h2>
+
+                <h3>Zoom and Pan</h3>
+                <p>
+                    Use the zoom buttons in toolbar or mouse wheel to zoom in/out. Hold space bar and drag to pan. The zoom to layer button automatically adjusts view to fit the loaded layer.
+                </p>
+
+                <h3>Viewing Attributes</h3>
+                <p>
+                    Right-click a layer and choose Open Attribute Table to view the data associated with geographic features. Each row represents a feature (e.g., a district), and columns show properties (e.g., population, area).
+                </p>
+
+                <h3>Styling and Symbology</h3>
+                <p>
+                    Right-click a layer and choose Properties to change how data is displayed. You can assign colors to different categories, create heat maps for continuous data, or change symbol sizes. Effective visualization makes patterns visible that would be hidden in raw data.
+                </p>
+
+                <h2>Spatial Analysis</h2>
+                <p>
+                    QGIS has powerful analysis tools accessible through Processing menu. Examples include: Buffer (create zones around features), Intersect (find overlapping areas), Dissolve (merge adjacent polygons), Clip (extract data within boundaries). These tools enable complex spatial questions like "How many people live within 5km of this road?"
+                </p>
+
+                <h2>Practical Example: Field Analysis</h2>
+                <p>
+                    Suppose you have a shapefile of farmer field boundaries and remote sensing data showing vegetation indices. Load both in QGIS. Buffer the field boundaries by 50m to create a protection zone. Calculate the mean vegetation index within the buffer zone. Color-code fields by vegetation index to identify areas needing attention. Export results as a new shapefile. This demonstrates how GIS enables data-driven field management decisions.
+                </p>
+
+                <h2>Working with Remote Sensing Data</h2>
+                <p>
+                    QGIS can display satellite imagery and drone data. Load a GeoTIFF file showing multispectral drone imagery. Use the raster calculator (Raster menu) to create custom indices. For example, to calculate NDVI: (NIR - Red) / (NIR + Red), where NIR and Red are the band numbers corresponding to near-infrared and red reflectance. Save the calculated index as a new raster for analysis.
+                </p>
+
+                <h2>Tips for Success</h2>
+                <ul class="references">
+                    <li>Always check that data is properly georeferenced (has coordinate system defined)</li>
+                    <li>Keep a separate folder for each project with inputs and outputs organized</li>
+                    <li>Use meaningful layer names and save projects regularly</li>
+                    <li>QGIS has excellent built-in help - use Help menu and online documentation</li>
+                    <li>Join the QGIS community forums if you encounter problems</li>
+                </ul>
+
+                <h2>Next Steps</h2>
+                <p>
+                    After mastering basics, explore more advanced topics: working with databases, automating workflows with Python scripts, integrating with Google Earth Engine data, and creating professional maps for reports and presentations. QGIS capabilities are extensive, and there's always more to learn.
+                </p>
+
+                <h2>Conclusion</h2>
+                <p>
+                    QGIS is a powerful tool that democratizes access to geospatial analysis. Whether you're a farmer making field management decisions, a researcher analyzing agricultural systems, or a development worker assessing community needs, QGIS provides the capability to visualize, analyze, and understand geographic data. The learning curve is gentle for basic operations, and the open-source community ensures continuous improvement and support.
+                </p>
+
+                <div class="article-footer"><a href="../articles.html" class="back-link">← Back to Articles</a></div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section"><h4>Agri-Intelligence Research Lab</h4><p>Intelligence in Agriculture based in Nepal</p></div>
+            <div class="footer-section"><h4>Quick Links</h4><ul><li><a href="../about.html">About</a></li><li><a href="../publications.html">Publications</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+            <div class="footer-section"><h4>Follow Us</h4><div class="social-links"><a href="#" class="social-icon">LinkedIn</a><a href="#" class="social-icon">Twitter</a><a href="#" class="social-icon">GitHub</a></div></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 Agri-Intelligence Research Lab. All rights reserved.</p></div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

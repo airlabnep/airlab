@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Learning for Crop Disease Detection - Agri-Intelligence Research Lab</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><span class="logo-icon">💡</span>
+                <div class="logo-text-wrapper">
+                    <span class="logo-text">AIR Lab</span>
+                    <span class="logo-tagline">Intelligence in Agriculture</span>
+                </div></div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../about.html" class="nav-link">About</a></li>
+                <li><a href="../publications.html" class="nav-link">Publications</a></li>
+                <li><a href="../people.html" class="nav-link">People</a></li>
+                <li><a href="../opportunities.html" class="nav-link">Opportunities</a></li>
+                <li><a href="../contact.html" class="nav-link">Contact</a></li>
+                <li class="dropdown"><a href="#" class="nav-link">More</a>
+                    <div class="dropdown-content"><a href="../projects.html">Projects</a><a href="../collaborations.html">Collaborations</a><a href="../courses.html">Upcoming Courses</a><a href="../articles.html" class="active">Articles</a></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="article-full">
+        <div class="article-header">
+            <div class="container">
+                <div class="article-category">AI & Machine Learning</div>
+                <h1>Deep Learning for Crop Disease Detection</h1>
+                <div class="article-meta-full"><span class="author">By AI Research Team</span><span class="date">April 20, 2024</span><span class="read-time">7 min read</span></div>
+            </div>
+        </div>
+
+        <div class="article-body">
+            <div class="container">
+                <h2>Introduction</h2>
+                <p>
+                    Crop diseases cause up to 40% of global crop losses annually, with significant economic and food security implications. Early detection is critical for effective management, but traditional methods rely on farmer expertise and scouting, which is time-consuming and often delayed. Deep learning approaches now enable automated, rapid, and accurate detection of crop diseases from high-resolution imagery, revolutionizing disease management in modern agriculture.
+                </p>
+
+                <h2>The Disease Detection Challenge</h2>
+                <p>
+                    Crop diseases exhibit complex visual symptoms that vary with:
+                    Disease stage (early lesions vs advanced infections), environmental conditions (humidity, lighting), host plant variety, and other stress factors. Human scouts often miss early infections or misidentify diseases under suboptimal viewing conditions. Scaling disease monitoring across large fields or regions requires extensive manual labor, making timely intervention difficult.
+                </p>
+
+                <h2>Deep Learning Fundamentals</h2>
+                <p>
+                    Deep learning uses artificial neural networks with multiple layers to automatically learn features from raw data. For image-based disease detection, Convolutional Neural Networks (CNNs) are particularly effective. CNNs hierarchically learn features: early layers detect edges and color patterns, intermediate layers combine features into shapes and textures, and deeper layers recognize disease-specific patterns.
+                </p>
+
+                <h2>Training Deep Learning Models</h2>
+                <p>
+                    Training requires large labeled datasets (typically 1,000+ images per disease class). Images are augmented (rotations, brightness adjustments, crops) to increase effective dataset size and improve generalization. Models like ResNet, VGG, and EfficientNet serve as backbones, often with transfer learning from ImageNet pre-training to reduce data requirements.
+                </p>
+
+                <h2>Real-World Applications</h2>
+                <p>
+                    Studies demonstrate >95% accuracy in detecting maize diseases (leaf blight, rust, gray leaf spot), wheat diseases (Septoria blotch, tan spot), and rice diseases (blast, brown spot). Deployment on mobile phones or embedded systems enables real-time detection in the field. Integration with UAV imagery enables large-scale automated scouting of entire fields, identifying infected areas for targeted intervention.
+                </p>
+
+                <h2>Practical Implementation</h2>
+                <p>
+                    Farmers can use smartphone apps to photograph suspicious leaf symptoms, with models running on-device or through cloud APIs. Models trained on regional disease populations perform better than generic models, highlighting the importance of local data. Field validation shows that early detection enables interventions reducing yield loss from disease by 30-50%.
+                </p>
+
+                <h2>Challenges and Limitations</h2>
+                <p>
+                    Model performance can degrade on images outside the training distribution (different lighting, camera angles, growth stages). Diseases often co-occur, requiring models to distinguish among multiple diseases simultaneously. Implementation requires reliable internet or on-device computing capability, which may be limited in remote agricultural areas.
+                </p>
+
+                <h2>Conclusion</h2>
+                <p>
+                    Deep learning-based disease detection is transitioning from research to practical implementation, with commercial apps and services now available. As more field data is collected and models are refined, the accuracy and reliability will continue to improve, making this technology an essential component of modern disease management and precision agriculture.
+                </p>
+
+                <div class="article-footer"><a href="../articles.html" class="back-link">← Back to Articles</a></div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section"><h4>Agri-Intelligence Research Lab</h4><p>Intelligence in Agriculture based in Nepal</p></div>
+            <div class="footer-section"><h4>Quick Links</h4><ul><li><a href="../about.html">About</a></li><li><a href="../publications.html">Publications</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+            <div class="footer-section"><h4>Follow Us</h4><div class="social-links"><a href="#" class="social-icon">LinkedIn</a><a href="#" class="social-icon">Twitter</a><a href="#" class="social-icon">GitHub</a></div></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2024 Agri-Intelligence Research Lab. All rights reserved.</p></div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

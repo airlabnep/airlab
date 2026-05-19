@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Agri-Intelligence Research Lab</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">💡</span>
+                <div class="logo-text-wrapper">
+                    <span class="logo-text">AIR Lab</span>
+                    <span class="logo-tagline">Intelligence in Agriculture</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="publications.html" class="nav-link">Publications</a></li>
+                <li><a href="people.html" class="nav-link">People</a></li>
+                <li><a href="opportunities.html" class="nav-link">Opportunities</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link">More</a>
+                    <div class="dropdown-content">
+                        <a href="projects.html">Projects</a>
+                        <a href="collaborations.html">Collaborations</a>
+                        <a href="courses.html">Upcoming Courses</a>
+                        <a href="articles.html">Articles</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with the Agri-Intelligence Research Lab team</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inquiry">Type of Inquiry *</label>
+                            <select id="inquiry" name="inquiry" required>
+                                <option value="">Select an option</option>
+                                <option value="collaboration">Collaboration Opportunity</option>
+                                <option value="research">Research Partnership</option>
+                                <option value="job">Job Inquiry</option>
+                                <option value="training">Training/Courses</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <h2>Contact Information</h2>
+
+                    <div class="contact-info-block">
+                        <h3>📍Location</h3>
+                        <p>
+                            Agri-Intelligence Research Lab<br>
+                            Intelligence in Agriculture<br>
+                            Kathmandu, Nepal
+                        </p>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <h3>📧Email</h3>
+                        <p>
+                            <strong>General Inquiries:</strong><br>
+                            <a href="mailto:info@mapmentors.org">info@mapmentors.org</a>
+                        </p>
+                        <p>
+                            <strong>Research & Collaboration:</strong><br>
+                            <a href="mailto:research@mapmentors.org">research@mapmentors.org</a>
+                        </p>
+                        <p>
+                            <strong>Training & Courses:</strong><br>
+                            <a href="mailto:training@mapmentors.org">mapmentors@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <h3>📱 Phone</h3>
+                        <p>
+                            <a href="tel:+977-9868365688">+977-9868365688</a>
+                        </p>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <h3>🌐 Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/company/mapmentors" title="LinkedIn"
+                                class="social-icon-link">LinkedIn</a>
+                            <a href="https://twitter.com/mapmentors" title="Twitter"
+                                class="social-icon-link">Twitter</a>
+                            <a href="https://github.com/mapmentors/mapmentors" title="GitHub"
+                                class="social-icon-link">GitHub</a>
+                            <a href="https://www.facebook.com/mapmentors" title="Facebook"
+                                class="social-icon-link">Facebook</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <h3>🕒 Office Hours</h3>
+                        <p>
+                            Monday - Friday: 9:00 AM - 5:00 PM<br>
+                            Saturday - Sunday: Closed<br>
+                            <br>
+                            <em>Nepal Standard Time (NST) UTC +5:45</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h2>Find Us On The Map</h2>
+                <div id="map" class="osm-map"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Agri-Intelligence Research Lab</h4>
+                <p>Intelligence in Agriculture based in Nepal</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">LinkedIn</a>
+                    <a href="#" class="social-icon">Twitter</a>
+                    <a href="#" class="social-icon">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Agri-Intelligence Research Lab. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <script>
+        // Initialize OpenStreetMap in Kirtipur, Kathmandu, Nepal
+        const map = L.map('map').setView([27.6833, 85.3167], 14);
+
+        // Add OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 19
+        }).addTo(map);
+
+        // Add marker for Agri-Intelligence Research Lab location
+        const marker = L.marker([27.6833, 85.3167]).addTo(map);
+        marker.bindPopup('<b>Agri-Intelligence Research Lab</b><br>Intelligence in Agriculture<br>Kirtipur, Kathmandu, Nepal').openPopup();
+    </script>
+</body>
+
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
